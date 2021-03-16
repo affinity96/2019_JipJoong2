@@ -1,0 +1,783 @@
+@import url('//cdn.rawgit.com/young-ha/webfont-archive/master/css/Godo.css');
+button:focus{
+    outline: none !important;
+}
+.mypageWrapper{
+    width:100%;
+    padding: 50px 0px;
+    display: flex;
+    justify-content: space-around;
+    font-family: 'Godo';
+}
+.sideBar{
+    border: 3px double  #dfaa32;
+    border-radius: 15px;
+    width: 20%;
+    padding: 25px;
+    max-width: 300px;
+
+
+}
+.contextBox{
+    width: 75%;
+    border: 3px double  #dfaa32;
+    border-radius: 15px;
+    padding: 25px;
+    padding-bottom: 0px;
+    max-width: 1200px;
+
+
+}
+.halfUl{
+    width:50%;
+}
+.contextBox ul{
+    margin-bottom: 0px;
+
+    
+}
+.studyCredit{
+    opacity: 0;
+}
+
+.sideBar p{
+    font-size: 1.2em;
+    border-bottom: 1px solid #dfaa32;
+}
+
+.sideContent{
+    margin-bottom: 10px;
+    cursor: pointer;
+}
+.mypageList{
+    display:none;
+}
+
+.sideContent span:hover{
+    padding-bottom:5px;
+    border-bottom: 1px solid;
+}
+
+.categoryList{
+    display: flex;
+    padding: 20px 0px;
+
+}
+.categoryList:first-child{
+    padding-top:0px;
+
+}
+.categoryTitle{
+    margin: unset;
+    padding-right: 10px;
+    border-right: 1px solid #dfaa32;
+}
+.ulBox{
+    display: flex;
+}
+
+.dbContent{
+    width: 130px;
+    margin: unset;
+    padding-left: 10p;
+    margin-left: 10px;
+}
+.dbContent img{
+    width:25px;
+}
+input[type="text"]{
+    border: none;
+    border-bottom: 1px solid #dfaa32;
+}
+
+.buttonBox{
+    padding: 20px 0px;
+    text-align: center;
+    border-top: 1px solid #dfaa32;
+}
+.crown{
+    height : 20px;
+    width : 20px;
+}
+.me{
+    height : 30px;
+    width : 30px;
+}
+.modifyBtn,.modifyCheckedBtn{
+    transition: 0.25s;
+    border: 1px solid;
+    color: #000000;
+    background: transparent;
+    padding: 5px 15px;
+    border-radius: 25px;
+}
+.modifyCheckedBtn:hover,
+.modifyCheckedBtn:focus,
+.modifyBtn:hover,
+.modifyBtn:focus {
+  box-shadow: inset 0 0 0 2em #dfaa32;
+  color: #fff;
+  border-color: #dfaa32;
+    outline:none;
+}
+.contentTitle{
+    border-bottom: 1px solid #dfaa32;
+    font-size: 1.2em;
+}
+#date{
+    font-size : 13px;
+}
+.alarm_on,
+.trnum_sum{
+    display: none !important;
+    color : white;
+    font-size : 0.8em;
+    background-color: #ff6600;
+    display: inline-block;
+    border : 2px solid #ff6600;
+    border-radius : 100%;
+    width : 20px;
+    height: 20px;
+    text-align: center;
+    justify-content: space-around;
+}
+.alarm_on.active,
+.trnum_sum.active{
+    display: inline-block !important;
+    
+}
+
+.contentWrap{
+    display:none;
+}
+
+.contentWrap.active{
+    display:block;
+}
+
+
+/* 역량 카테고리 css */
+.categoryLists{
+    display: flex;
+    justify-content: space-between;
+}
+.colTitle{
+    font-size: 1.2em;
+    font-weight: bold;
+    margin-bottom: 15px;
+}
+.colContent{
+    display: flex;
+    align-items: center;
+    font-size: 1em;
+}
+.checkbox-container .checkbox:after {
+    content: "";
+    position: absolute;
+    width: 0px;
+    height: 3px;
+    background: #3498db;
+    -webkit-transform: translate(4px, 11px) rotate(-45deg);
+    transform: translate(17px, 3px) rotate(-45deg);
+    -webkit-transform-origin: left;
+    transform-origin: left;
+    transition: all 150ms;
+    transition-delay: 0ms;
+}
+.checkbox-container .checkbox:before {
+    content: "";
+    position: absolute;
+    width: 0px;
+    height: 3px;
+    background: #3498db;
+    -webkit-transform: translate(1px, 6px) rotate(45deg);
+    transform: translate(10px, -4px) rotate(45deg);
+    -webkit-transform-origin: left;
+    transform-origin: left;
+    transition: all 150ms;
+    transition-delay: 150ms;
+}
+.checkbox-container input[type="checkbox"]:checked ~ .checkbox:after {
+    width: 18px;
+    transition-delay: 150ms;
+}
+.checkbox-container input[type="checkbox"]:checked ~ .checkbox:before {
+    width:11px;
+	transition-delay: 0ms;
+}
+input[type="checkbox"] {
+    display: none;
+}
+
+label {
+    cursor: pointer;
+}
+
+.classList{
+    padding-left :5em;
+    padding-right:5em;
+    padding-bottom : 3em;
+}
+.studyList{
+    padding-left :5em;
+    padding-right:5em;
+    padding-bottom:5em;
+}
+.innertitle{
+    font-size : 1.5em;
+    text-align : center;
+}
+.specificTitle{
+    display: flex;
+    justify-content: space-between;
+    background-color: #f4f4f4;
+
+    border: 1px solid #ddd;
+    border-radius: .5rem;
+    cursor: pointer;
+    overflow: hidden;
+    padding:5px;
+    transition: all ease 0.5s;
+}
+.specificTitle:hover{
+
+    background-color: #fff;
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,.12);
+}
+
+.specificContent{
+    padding : 25px;
+    display:none;
+    border: 1px solid #ddd;
+    border-top: none;
+    overflow: auto;
+
+    background-color: #fff;
+    border-radius: .5rem;
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,.12);
+    overflow: visible;
+
+}
+.profileDetail2{
+    right: 0 !important;
+    top: unset !important;
+    left: 10px !important;
+    width: 250% !important;
+
+}
+.profileDetailBtn{
+    color: #848484 !important;
+    border: none !important;
+    font-size: 0.8em !important;
+    padding: unset !important;
+}
+.profileDetailBtn:hover,
+.profileDetailBtn:focus{
+    color: #848484 !important;
+    border: none !important;
+    font-size: 0.8em !important;
+    padding: unset !important;
+    box-shadow: none !important;
+    outline: none !important;
+}
+
+.leftbox{
+
+    float: left;
+    width: 100%;
+    padding: 15px 30px;
+    border-bottom: 3px dashed #dfaa32;
+    margin-bottom: 10px;
+    
+}
+.rightbox{
+    width: 100%;
+    padding: 15px 0px;
+    text-align: center;
+    border: 2px solid #dfaa32;
+    border-radius: 15px;
+}
+.partibox{
+    
+}
+.reportBtn,
+.profileBtn,
+.acceptBtn,
+.cancelConfirmBtn{
+    transition : 0.25s;
+    border : 1px solid;
+    color : #000000;
+    background : transparent;
+    padding : 0px 15px;
+    border-radius : 25px;
+    outline : none;
+    margin-left: 10px;
+
+}
+.reportBtn:hover,
+.profileBtn:hover,
+.cancelConfirmBtn:hover,
+.acceptBtn:hover{
+    box-shadow : inset 0 0 0 2em #dfaa32;
+    color : #fff;
+    border-color : #dfaa32;
+    outline : none;
+}
+.button{
+    display: flex;
+}
+
+.acceptBtn:focus,
+.cancelConfirmBtn:focus{
+    outline : none;
+}
+
+.groupMember{
+
+}
+.memberName{
+
+}
+.partyContent{
+    display: flex;
+    position: relative;
+    justify-content: space-between;
+    align-items: stretch;
+    background-color: #f4f4f4;
+    border: 1px solid #ddd;
+    border-radius: .5rem;
+    margin-bottom: 10px;
+    overflow: hidden;
+    padding: 10px;
+    transition: all ease 0.5s;
+}
+.partyContent:hover{
+
+    box-shadow: 0px 0px 9px 3px rgba(0,0,0,.12);
+    background: #fff;
+}
+.cancelBtn{
+    width: 70px;
+    background: none;
+    border: none;
+    border-radius: 25px;
+    transition: all ease 0.25s;
+}
+
+.cancelBtn:hover{
+    box-shadow: inset 0 0 0 2em #dfaa32;
+    color: #fff;
+    border-color: #dfaa32;
+    outline:none;
+}
+.partyType{
+    font-size: 1.5em;
+    text-align: center;
+}
+.partyBox{
+    margin-bottom:15px;
+}
+.partyTime{
+    width:33%;
+}
+.partyCredit{
+    width: 21%;
+}
+.partyTime p{
+    margin:unset;
+    font-size: 0.8em;
+
+}
+.subContentBox{
+    display: flex;
+    justify-content: space-between;
+    width: 43%;
+    align-items: center;
+    min-width: 333px;
+}
+.participantBox{
+    margin-top:25px;
+}
+.memberuserClass> li >span:first-child{
+    display: inline-block;
+    width: 20px;
+    
+}
+
+.marginleft{
+    margin-right: 10px;
+}
+.specificContent p{
+    margin-bottom: 10px;
+
+}
+.partyTable,.partyList{
+    width: 100%;
+    text-align: center ;
+}
+caption{
+    text-align: center ;
+    caption-side: top ;
+}
+.detailContent{
+    text-align: center;
+}
+.halfBox{
+    width:49%;
+    display: inline-block;
+}
+
+td{
+    width:33%;
+}
+.makeBox{
+    text-align: center;
+}
+.makeGroupBtn{
+    margin-top: 15px;
+    width: 150px;
+    background: transparent;
+    border: 1px solid;
+    border-radius: 25px;
+    transition: all ease 0.25s;
+}
+.makeGroupBtn:hover{
+    box-shadow: inset 0 0 0 2em #dfaa32;
+    color: #fff;
+    border-color: #dfaa32;
+    outline:none;
+}
+
+.makeGroupBtn:focus{
+   
+    outline:none;
+}
+.middleLine{
+    display: block;
+    width: 70%;
+    border-bottom: 1px dashed #dfaa32;
+    margin: 25px auto;
+    text-align: center;
+}
+
+.fade-scale {
+    transform: scale(0);
+    opacity: 0;
+    -webkit-transition: all .25s linear;
+    -o-transition: all .25s linear;
+    transition: all .25s linear;
+  }
+  
+  .fade-scale.in {
+    opacity: 1;
+    transform: scale(1);
+  }
+  .modal {
+      display: none; /* Hidden by default */
+      position: fixed; /* Stay in place */
+      z-index: 999; /* Sit on top */
+      left: 0;
+      top: 0;
+      width: 100%; /* Full width */
+      height: 100%; /* Full height */
+      overflow: auto; /* Enable scroll if needed */
+      background-color: rgb(0,0,0); /* Fallback color */
+      background-color: rgba(0,0,0,0.8); /* Black w/ opacity */
+  }
+  
+  /* Modal Content */
+  .modal-content {
+      background-color: #fefefe;
+      border: 1px solid #888;
+      width: 80%;
+      height: auto;
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%,-50%);
+  }
+  
+  /* The Close Button */
+  .close {
+      margin-right: 10px;
+      color: #aaaaaa;
+      float: right;
+      font-weight: bold;
+  }
+  
+  .close:hover,
+  .close:focus {
+      color: #000;
+      text-decoration: none;
+      cursor: pointer;
+  }
+  .partyTitle{
+    display: flex;
+    width: 57%;
+    cursor: pointer;
+    align-items: center;
+  }
+  .partyTitle span.active{
+    border-bottom: 1px solid;
+    padding-bottom: 5px;
+}
+.confirmUl{
+    background:#f4f4f4;
+    border: 1px solid #ddd;
+    border-radius: .5rem;
+    transition:all ease 0.5s;
+}
+.confirmUl:hover{
+    background:#fff;
+    box-shadow: 0px 0px 9px 3px rgba(0,0,0,.12);
+}
+.confirmList{
+    margin-right: 10px;
+}
+.confirmGroupList{
+    display: flex;
+    justify-content: space-between;
+    padding: 10px;
+    margin: 0px 10px;
+    border-bottom: 1px solid #c1c1c1;
+}
+.confirmGroupList:last-child{
+    border-bottom: none;
+}
+.confirmGroupList span{
+    width:25%;
+}
+.confirmGroupList .name{
+    width:15%;
+    min-width: 95px;
+
+}
+.confirmGroupList p {
+    margin:unset;
+}
+.deleteConfirm{
+    display: flex;
+    align-items: center;
+    padding: 1px 7px;
+    border-radius: 15px;
+    color:#848484;
+    cursor:pointer;
+    transition:all ease 0.25s;
+}
+.deleteConfirm:hover{
+    box-shadow: inset 0 0 0 2em #e7e7e7;
+    
+}
+.detailLink{
+    width: auto !important;
+    display: contents;
+    margin-left: 10px;
+    font-size: 0.8em;
+    color: #848484;
+    cursor: pointer;
+}
+.detailLink:hover{
+    border-bottom: 1px solid;
+}
+.confirmBox{
+    margin-bottom:10px;
+}
+
+.noneLine{
+    text-align: center;
+    color: #848484;
+}
+.profileDetail{
+    display: none;
+    position: absolute;
+    width: 180%;
+    top: 0;
+    right: 100%;
+    background: #fff;
+    padding: 10px;
+    border: 1px solid #dfaa32;
+    border-radius: 10px;
+    z-index: 1;
+}
+.profileDetail li {
+    display: flex;
+    justify-content: space-between;
+}
+.profileDetail li:first-child {
+    display: block;
+    text-align: center;
+    border-bottom: 1px solid #dfaa32;
+    margin-bottom: 5px;
+
+}
+.profileDetail li span{
+    margin-right:10px;
+}
+.levelIcon{
+    width:20px;
+}
+.mobile_mypage{
+    display: none;
+}
+.detailCover{
+    position: absolute;
+    width: 80%;
+    height: 100%;
+    top: 0;
+    z-index: 1;
+
+}
+.detailTitle{
+    width:auto !important;
+    display: inline-block;
+    overflow:hidden;
+    text-overflow:ellipsis;
+    white-space:nowrap;
+}
+.userPhoneLi,
+.userEmailLi    {
+    display:none !important;
+}
+@media (max-width:991px){
+
+    .contextBox {
+        width: 100%;
+    }
+    .mypageList{
+        display: list-item;
+        font-size: 0.8em;
+
+    }
+
+    .mobile_mypage{
+        display:list-item;
+    }
+}
+@media (max-width: 768px){
+    .classList {
+        padding-left: 2em;
+        padding-right: 2em;
+        padding-bottom: 3em;
+    }
+    .studyList {
+        padding-left: 2em;
+        padding-right: 2em;
+        padding-bottom: 3em;
+    }
+    .partyCredit {
+        display: none;
+    }
+    .partyTime {
+        width: 60%;
+    }
+    .partyTime p span{
+        display: block;
+        overflow : hidden;
+        text-overflow: ellipsis;
+        white-space: nowrap;
+    }
+    .subContentBox {
+
+        min-width: 200px;
+    }
+    .partyTitle {
+        width: 130px;
+
+    }
+    .partyTitle span {
+        width: 130px;
+        overflow : hidden;
+        text-overflow: ellipsis;
+        white-space: nowrap;
+    }
+    .pcText{
+        display: none;
+    }
+    .profileDetail {
+        display: none;
+        width: 250%;
+        top: 100%;
+        right: 0;
+        
+    }
+    .userPhoneLi,
+    .userEmailLi{
+        display:flex !important;
+    }
+}
+
+@media (max-width:480px){
+    .reportBtn, .profileBtn, .acceptBtn, .cancelConfirmBtn {
+        transition: 0.25s;
+        border: 1px solid;
+        color: #000000;
+        background: transparent;
+        padding: 0px 5px;
+        border-radius: 25px;
+        outline: none;
+        margin-left: 5px;
+        font-size: 0.9em;
+    }
+    .classList {
+        padding-left: 0.5em;
+        padding-right: 0.5em;
+        padding-bottom: 0.5em;
+    }
+    #date {
+        display: none;
+    }
+    .studyList {
+        padding-left: 0.5em;
+        padding-right: 0.5em;
+        padding-bottom: 0.5em;
+    }
+    .subContentBox {
+
+        min-width: 165px;
+    }
+
+    .ulBox {
+        flex-direction: column;
+    }
+    .categoryList {
+        padding: 10px 0px;
+    }
+    .categoryLists {
+        flex-wrap: wrap;
+    }
+    .halfUl {
+        width: 100%;
+    }
+    .categoryList:first-child {
+        padding-top: 10px;
+    }
+    .colBox{
+        width:50%;
+        margin-bottom: 15px;
+
+    }
+    .contextBox {
+        padding: 15px;
+
+    }
+    .detailCover{
+        width: 70%;
+        z-index: 1;
+    }
+    .specificContent {
+        padding: 10px;
+
+    }
+    .leftbox {
+        padding: 10px 10px;
+    }
+    .detailTitle{
+        width:60% !important;
+    }
+    .profileDetail {
+        width: 300%;
+
+    }
+    
+    
+}

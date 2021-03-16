@@ -1,0 +1,382 @@
+@import url('//cdn.rawgit.com/young-ha/webfont-archive/master/css/Godo.css');
+
+body{
+  font-family: "Godo";
+  background:none;
+}
+
+
+.container_detail
+{
+
+  width: 100% !important;
+  background: #fff;
+  border: 3px double #dfaa32;
+  border-radius: 15px;
+  padding: 19px;
+  max-width: 1200px;
+  width: 90%;
+  font-size: 1.5em;
+
+
+} 
+
+.container{
+    margin: 30px auto;
+    border-radius: 15px;
+    padding: 25px;
+    max-width: 1200px;
+    width: 90%;
+    font-size: 1.5em;
+
+
+}
+.groupTitle{
+    border-bottom: 1px solid #dfaa32;
+    padding-bottom: 10px;
+    word-break: break-all;
+    width:90%;
+    margin-left: auto;
+    margin-right: auto;
+}
+.groupContent,table{
+    font-size: 0.8em;
+    word-break: break-all;
+}
+.divideWrap{
+    display: flex;
+}
+/* .divideWrap.tr{
+  width:10px;
+} */
+#divideWrapForPC{
+  display: flex;
+}
+#divideWrapForMOBILE{
+  display:none;
+}
+.middleLine{
+    display: block;
+    width: 70%;
+    border-bottom: 1px dashed #dfaa32;
+    margin: 25px auto;
+    text-align: center;
+}
+.divideBox{
+    width:50%;
+}
+.textBox{
+    
+    border: 1px solid #dfaa32;
+    border-radius: 10px;
+    padding: 10px;
+}
+.detailContent{
+  width: 100%;
+  background: none;
+  border: none;
+  font-family: "Godo";
+  white-space: pre-wrap;
+
+}
+.fullBox{
+    width: 100%;
+}
+table{
+    width:100% !important;
+    
+}
+#hihi{
+  width:20px;
+}
+.completeBtn{
+    border: none;
+    color: #473bf9;
+    background: transparent;
+    padding: 0px 15px;
+    border-radius: 25px;
+    cursor: default;
+}
+.completeBtn:focus{
+    outline:none;
+}
+
+.partyBtn{
+  transition: 0.25s;
+  border: 1px solid;
+  color: #000000;
+  background: transparent;
+  padding: 0px 15px;
+  border-radius: 25px;
+}
+.partyBtn:hover{
+  box-shadow: inset 0 0 0 2em #dfaa32;
+  color: #fff;
+  border-color: #dfaa32;
+  outline:none;
+
+}
+.partyBtn:focus{
+  outline:none;
+
+}
+.partyBtnNot{
+  transition: 0.25s;
+  border: none;
+  color: #b3b3b3;
+  background: transparent;
+  padding: 0px 15px;
+  border-radius: 25px;
+  cursor: default;;
+}
+.partyBtnNot:hover,
+.partyBtnNot:focus{
+
+  outline:none;
+
+}
+
+th,td{
+    padding-bottom: 5px;
+  
+}
+.condition{
+  white-space: nowrap;
+}
+/* th:nth-child(4),td:nth-child(4),
+th:nth-child(2),td:nth-child(2){
+
+  white-space: nowrap;
+} */
+
+th:last-child,td:last-child{
+    text-align: center;
+    position: relative;
+    white-space: nowrap;
+}
+.cancelBtn{
+  background: none;
+  border: none;
+  border-radius: 25px;
+  transition: all ease 0.25s;
+}
+.fakeBtn{
+    cursor: default;
+    opacity: 0;
+    border:none;
+}
+.cancelBtn:hover{
+  box-shadow: inset 0 0 0 2em #dfaa32;
+  color: #fff;
+  border-color: #dfaa32;
+  outline:none;
+}
+.cancelBtn:focus{
+  outline:0
+}
+
+.footerBtnBox{
+  text-align: center;
+  margin-top: 20px;
+
+}
+
+.deleteBtn{
+  transition: 0.25s;
+  border: 1px solid;
+  color: #000000;
+  background: transparent;
+  padding: 0px 40px;
+  border-radius: 25px;
+  margin: 0px 30px;
+}
+
+.deleteBtn:hover{
+  box-shadow: inset 0 0 0 2em #dfaa32;
+  color: #fff;
+  border-color: #dfaa32;
+  outline:none;
+
+}
+.deleteBtn:focus,
+.deleteBtn:hover{
+  outline:none;
+
+}
+.profileBtn{
+  height: 23px; 
+  border-radius: 5px;
+  cursor: pointer;
+  background: #b8b8b8;
+  color: #fff;
+  font-size: 1.5rem;
+  border: none;
+  transition: all ease 0.25s;
+}
+.profileBtn.active{
+  background: #dfaa32;
+  content: "eee";
+}
+
+
+.profileBtn:focus{
+  outline: none;
+}
+.profileContent{
+  display:none;
+  position: absolute;
+  border: 2px double #dfaa32;
+  border-radius: 15px;
+  background-color: #f9f9f9;
+  width:65%;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+  padding:10px
+}
+.profileContent2{
+  border: 2px double #dfaa32;
+  border-radius: 15px;
+  background-color: #f9f9f9;
+  width: 90%;
+  margin: 20px auto;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  padding:10px
+}
+.profileContent.is-active{
+    display:inline-block;
+}
+.levelIcon{
+  width:20px;
+}
+
+.triangleBtn {
+  width : 20px;
+  height : 20px;
+ 
+}
+table{
+
+  table-layout: fixed;
+}
+@media(max-width : 768px){
+  .partyBtn{
+    padding: 0px 5px;
+  }
+  .completeBtn{
+    padding:0px;
+  }
+  .partyBtnNot{
+    padding:0px;
+  }
+}
+@media(max-width : 455px){
+  
+  .container{
+    padding : 10px;
+    font-size :1.25em;
+  }
+  .container_detail{
+    padding : 8px;
+  }
+  .groupSubTitle{
+    width: 30%;
+    font-size: 1.6rem;
+   margin-right : 0px;
+  }
+  .divideBox{
+    width : 100%;
+    display : flex;
+  }
+  .divideWrap{
+    display: flex;
+    flex-wrap : wrap;
+  }
+
+  .profileBtn{
+    height: 20px;
+    width: 30%;
+    border-radius: 2px;
+    font-size: 1.3rem;
+    position: absolute;
+    right: 10px;
+  }
+  .middleLine{
+    display: none;
+  }
+  .groupContent{
+    font-size : 1.5rem;
+  }
+  #groupcontent_id{
+    width : 33%;
+  }
+  .deleteBtn{
+    padding : 0px 30px;
+    font-size : 1em;
+  }
+  #divideWrapForPC{
+    display : none;
+
+  }
+  #divideWrapForMOBILE{
+    display : flex;
+  }
+  
+  .new_mobile_box{
+    display : none;
+    font-size : 12px;
+    margin : 5px;
+    border : 1px solid #dfaa32;
+    border-radius: 10px;
+  }
+  .new_mobile_box.actives{
+    display: flex;
+  }
+  .condition{
+    width : 100px;
+    overflow : hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+  }
+  .partyBtn{
+    padding: 0px 5px;
+    border-radius : 10px;
+  }
+  .completeBtn{
+    padding : 0px 3px;
+  }
+  .mobilemoreinfo,
+  .mobilemoreinfo_close{
+  
+    background:none;
+    border:none;
+    transition: all ease 0.5s;
+    outline: none;
+  }
+  #tdbtn{
+    width:40px;
+  }
+  .mobilemoreinfo.active{
+    border:none;
+    outline: none;
+    transform: rotate(180deg);
+  }
+  .mobilemoreinfo_close.active{
+    border:none;
+    outline: none;
+    transform: rotate(180deg);
+  }
+  .mobilemoreinfo:active{
+    outline: none;
+  }
+  .mobilemoreinfo_close:active{
+    outline: none;}
+    
+  .profileContent {
+    top: 50%;
+    right: 0;
+    font-size: 0.9em;
+  }
+
+}
